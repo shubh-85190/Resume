@@ -3,6 +3,9 @@
 <head>
     <title>SHUBHAM MEWADA - CV</title>
     <style>
+        h3{
+            text-decoration: underline;
+        }
         .education td,th{
             padding: 8px;
             border: 2px solid black;
@@ -23,25 +26,59 @@
         }
         .header h3{
             margin-bottom: -2px;
+            text-decoration: underline;
         }
         h2{
             margin-bottom: -15px;
         }
+        .experience{
+            padding: 10px;
+            padding-top: 0%;
+        }
+        .experience h4{
+            font-size: large;
+            margin-bottom: -1px;
+        }
+        .signature{
+            text-align: right;
+            padding-bottom: 10px;
+            margin-top: -30px;
+        }
     </style>
+    
 </head>
 
 <body>
     <div class="header">
 
         <h2>Shubham Mewada</h2>
-        <h3>Quality Analyst</h3>
+        <h3>Associate Tester</h3>
         <div>H.53, Ramanand Nagar, Lalghati, Bhopal 462001
         <br><strong>Contact No:-</strong> +918519015673 <br>
-        <strong>EMail ID:-</strong> shubh85190@gmail.com
+        <strong>EMail ID:-</strong> <a href="mailto:shubh85190@gmail.com">shubh85190@gmail.com</a>
     </div>
     </div>
-
-    <div class="education">
+<div class="careerobjective">
+    <h3>Career Objective :-</h3>
+    <p>Highly motivated and skilled software tester with a passion for frontend development seeking a transition to a frontend developer role. Proficient in HTML, CSS, JavaScript, and Angular with hands-on experience in creating responsive and user-friendly websites. Strong attention to detail and ability to write clean and efficient code. Possess excellent analytical and problem-solving skills, which have been honed through years of experience in software testing.</p>
+</div>
+<h3>Work Experience :- </h3>
+<div class="experience">
+    
+    <h4>Associate Tester </h4>
+    Corecard Software India Pvt Ltd <br>
+    Jan 2021 - Present
+<ul>
+    <li>Assist in Test Case creation from the Functional Specifications/Software Requirement Specification document. 
+</li><li>Test the Functionality as per the Test plan and respective Test Cases.  
+</li><li>To update test case execution status in the recording system and log defects.
+</li><li>Demonstrated expertise in designing and executing test cases, identifying defects, and ensuring the quality and performance of software applications.
+    </li><li>Single-handedly managed 4 project at a time and delivered satisfactory performance.
+    </li><li>Provided post production support to the clients and resolved issue of production environment.
+    </li><li>Reconciled logs of regressions and entered defects accordingly.
+</li></ul>
+</div>
+<div class="education">
         <h3>Education Qualification :- </h3>
         <table>
             <thead>
@@ -74,16 +111,35 @@
         </table>
     </div>
 
+    <div class="skills">
+        <h3>Technical Skills :-</h3>
+        <ul>
+            <li>Angular</li>
+            <li>Basics of ExpressJS, NodeJS and MongoDB.</li>
+            <li>C Programming.</li>
+            <li>HTML, CSS & JavaScript.</li>
+            <li>Basics of JavaSE, Python and C++. </li>
+
+        </ul>
+    </div>
+
     <div class="strength">
         <h3>Strength :-</h3>
+        <ul>
+            <li>Positive Attitude</li>
+            <li>Hard Working</li>
+            <li>Quick Learner</li>
+            <li>Work under pressure</li>
+            <li>Team Player</li>
+        </ul>
     </div>
 
     <div class="hobbies">
         <h3>Hobbies :- </h3>
         <ul>
-            <li>Listning Music</li>
+            <li>Listening Music</li>
             <li>Playing Cricket</li>
-            <li>Coading</li>
+            <li>Coding and Learning New Technologies</li>
             <li>Watching Movies</li>
         </ul>
     </div>
@@ -138,6 +194,20 @@
             </table>
 
         </div>
+    </div><br>
+    <div class="declaration">
+        <em>“I am here by declare that the above information is truth to best of my knowledge”</em>
+        <div class="date">
+            <strong>Date : <span id='date-time'></span></strong>
+            <script>
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=""+dt.getDate()+"/"+dt.getMonth()+"/"+dt.getFullYear();
+            </script>
+    <div class="signature">
+        <strong><em>(Shubham Mewada)</em></strong>
+    </div>    
+    </div>
+        
     </div>
 </body>
 
