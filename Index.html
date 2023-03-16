@@ -1,6 +1,4 @@
-<html>
-
-<head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>SHUBHAM MEWADA - CV</title>
     <style>
         h3{
@@ -22,7 +20,10 @@
             margin: auto;
         }
         body{
-            padding: 10px;
+            max-width: 800px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 100px;
         }
         .header h3{
             margin-bottom: -2px;
@@ -44,9 +45,47 @@
             padding-bottom: 10px;
             margin-top: -30px;
         }
+        div h3{
+            background-color: rgb(127, 192, 246);
+            padding: 5px;
+        }
+        .header h3{
+            background-color: inherit;
+        }
+        ul {
+  line-height: 1.5em;
+  margin: 5px 0 15px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+        li::before {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  top: 2px; 
+  border: solid 8px #46b80c;
+  border-radius: 8px;
+}
+
+li::after {
+  content: ""; 
+  position: absolute; 
+  left: 5px;
+  top: 5px;
+  width: 3px;
+  height: 6px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
     </style>
     
-</head>
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
 
 <body>
     <div class="header">
@@ -62,7 +101,7 @@
     <h3>Career Objective :-</h3>
     <p>Highly motivated and skilled software tester with a passion for frontend development seeking a transition to a frontend developer role. Proficient in HTML, CSS, JavaScript, and Angular with hands-on experience in creating responsive and user-friendly websites. Strong attention to detail and ability to write clean and efficient code. Possess excellent analytical and problem-solving skills, which have been honed through years of experience in software testing.</p>
 </div>
-<h3>Work Experience :- </h3>
+<div><h3>Work Experience :- </h3></div>
 <div class="experience">
     
     <h4>Associate Tester </h4>
@@ -82,11 +121,11 @@
         <h3>Education Qualification :- </h3>
         <table>
             <thead>
-                <th>Degree/Course</th>
+                <tr><th>Degree/Course</th>
                 <th>University/Institute</th>
                 <th>Year of Completion</th>
                 <th>Percent</th>
-            </thead>
+            </tr></thead>
             <tbody>
                 <tr>
                     <td>Bachelor of Technology</td>
@@ -117,7 +156,7 @@
             <li>Angular</li>
             <li>Basics of ExpressJS, NodeJS and MongoDB.</li>
             <li>C Programming.</li>
-            <li>HTML, CSS & JavaScript.</li>
+            <li>HTML, CSS &amp; JavaScript.</li>
             <li>Basics of JavaSE, Python and C++. </li>
 
         </ul>
@@ -153,7 +192,7 @@
         <h3>Personal Details :-</h3>
         <div class="pdetails">
             <table>
-                <tr>
+                <tbody><tr>
                     <td><strong>Father's Name</strong></td>
                     <td>: Mr. Lakhan Singh</td>
                 </tr>
@@ -191,14 +230,14 @@
                     <td><strong>Permanent Address</strong></td>
                     <td>:  Vill.-Duka, PO - Khadi, Block - Ashta, Dist. Sehore, MP 466116 </td>
                 </tr>
-            </table>
+            </tbody></table>
 
         </div>
     </div><br>
     <div class="declaration">
         <em>“I am here by declare that the above information is truth to best of my knowledge”</em>
-        <div class="date">
-            <strong>Date : <span id='date-time'></span></strong>
+        <br><br><div class="date">
+            <strong>Date : <span id="date-time">15/2/2023</span></strong>
             <script>
                 var dt = new Date();
                 document.getElementById('date-time').innerHTML=""+dt.getDate()+"/"+dt.getMonth()+"/"+dt.getFullYear();
@@ -209,6 +248,7 @@
     </div>
         
     </div>
-</body>
 
-</html>
+
+
+</body></html>
