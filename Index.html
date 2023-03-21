@@ -337,7 +337,9 @@
                 <strong>Date : <span id="date-time">15/2/2023</span></strong>
                 <script>
                     var dt = new Date();
-                    document.getElementById('date-time').innerHTML = "" + dt.getDate() + "/" + dt.getMonth() + "/" + dt.getFullYear();
+                    document.getElementById('date-time').innerHTML = "" + dt.getDate() + "/" + (dt.getMonth()+1) + "/" + dt.getFullYear();
+					console.log("" + dt.getDate() + "/" + (dt.getMonth()+1) + "/" + dt.getFullYear());
+					console.log("script executed.....");
                 </script>
                 <div class="signature">
                     <strong><em>(Shubham Mewada)</em></strong>
