@@ -5,6 +5,10 @@
     <title>SHUBHAM MEWADA - CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            /* margin: 0; */
+            padding: 0;
+        }
         .education td,
         th {
             padding: 8px;
@@ -16,8 +20,6 @@
             text-align: center;
             border-collapse: collapse;
             width: 100%;
-            overflow-x:auto;
-			display:block;
         }
 
         .pdetails table {
@@ -29,16 +31,33 @@
             margin: auto;
             padding-top: 30px;
             padding-bottom: 100px;
-            background-color: #334779;
+            /* background-color: ; */
+            background-image: url("./bg3.jpg");
         }
 
         /* h2 {
             margin-bottom: -2px;
         } */
 
-        .experience {
-            padding: 10px;
-            padding-top: 0%;
+        .experience ,
+        .careerobjective,
+        .personaldetails,
+        .achievements,
+        .hobbies,
+        .strength,
+        .skills,
+        .education,
+        .header,
+        .declaration
+        
+        {
+            padding: 20px;
+            padding-top: 1px;
+            margin : 10px;
+            /* border: 2px solid red; */
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 10px black;
+            border-radius: 20px;
         }
 
         .experience h4 {
@@ -53,7 +72,7 @@
         }
 
         div h3 {
-            background-color: rgb(253, 177, 35);
+            background-color: rgba(75, 245, 245, 0.735);
             padding: 5px;
             /* border: 2px solid; */
             border-radius: 10px;
@@ -70,8 +89,11 @@
 
         ul {
             line-height: 1.5em;
-            margin: 5px 0 15px;
+            margin: 5px 0 15px 60px;
             padding: 0;
+        }
+        .experience ul{
+            margin: 5px 0 15px;;
         }
 
         li {
@@ -137,7 +159,7 @@
             li::before {
                 content: "";
                 position: absolute;
-                left: -3px;
+                left: -5px;
                 top: 4px;
                 border: solid 10px #0cd8e7da;
                 border-radius: 15px;
@@ -154,12 +176,12 @@
         }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="header">
 
             <h2>Shubham Mewada</h2>
@@ -181,11 +203,11 @@
                 years
                 of experience in software testing.</p>
         </div>
-        <div>
-            <h3>Work Experience</h3>
-        </div>
+        
         <div class="experience">
-
+            <div>
+                <h3>Work Experience</h3>
+            </div>
             <h4>Associate Tester </h4>
             Corecard Software India Pvt Ltd <br>
             Jan 2021 - Present
@@ -262,7 +284,7 @@
                 <li>Hard Working</li>
                 <li>Quick Learner</li>
                 <li>Work under pressure</li>
-                <li>Team Work</li>
+                <li>Team Player</li>
             </ul>
         </div>
 
@@ -302,7 +324,7 @@
                             <td>: 13 Jan 2001</td>
                         </tr>
                         <tr>
-                            <td><strong>Marital Status</strong></td>
+                            <td><strong>Merital Status</strong></td>
                             <td>: Unmarried</td>
                         </tr>
                         <tr>
@@ -331,15 +353,14 @@
             </div>
         </div><br>
         <div class="declaration">
+            <h3>Declaration </h3>
             <em>“I am here by declare that the above information is truth to best of my knowledge”</em>
             <br><br>
             <div class="date">
                 <strong>Date : <span id="date-time">15/2/2023</span></strong>
                 <script>
                     var dt = new Date();
-                    document.getElementById('date-time').innerHTML = "" + dt.getDate() + "/" + (dt.getMonth()+1) + "/" + dt.getFullYear();
-					console.log("" + dt.getDate() + "/" + (dt.getMonth()+1) + "/" + dt.getFullYear());
-					console.log("script executed.....");
+                    document.getElementById('date-time').innerHTML = "" + dt.getDate() + "/" + dt.getMonth() + "/" + dt.getFullYear();
                 </script>
                 <div class="signature">
                     <strong><em>(Shubham Mewada)</em></strong>
@@ -349,7 +370,7 @@
         </div>
 
 
-    </div>
+    <!-- </div> -->
 
 </body>
 
