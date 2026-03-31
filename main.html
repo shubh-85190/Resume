@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        .conainer {
+        .container {
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            font-family: sans-serif;
         }
 
         .heading {
@@ -24,12 +26,12 @@
             width: 20px;
             height: 20px;
             position: relative;
-            top: 2px;
+            top: -2px;
         }
 
         .org-view {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             font-weight: 600;
         }
 
@@ -52,31 +54,87 @@
         h1,
         h2,
         h3,
-        h4,h5,h6 {
+        h4,
+        h5,
+        h6 {
             margin: 0px;
             margin-inline: auto;
             margin-bottom: 5px;
             text-align: center;
+            font-weight: bold;
+        }
+
+        /* Print button styling (visible on screen, hidden when printing) */
+        .print-button {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 9999;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        /* Print rules: hide everything except the container when printing */
+        @media print {
+            .print-button {
+                display: none !important;
+            }
+
+            body * {
+                visibility: hidden !important;
+            }
+
+            .container,
+            .container * {
+                visibility: visible !important;
+            }
+
+            .container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="container">
 
         <div>
             <h2>SHUBHAM MEWADA</h2>
-            <h4>Software Engineer</h4>
+            <h6 class="fst-italic">Software Development Engineer(SDE-1)</h6>
+            <div class="org-view">
+                <div>
+                    <img class="icon" src="./assets/phone.png" alt="">
+                    <a href="tel:+918519015673">+91 8519015673</a>
+                </div>
+                <div>
+                    <img class="icon" src="./assets/mail.png" alt="">
+                    <a href="mailto:shubh85190@gmail.com">shubh85190@gmail.com</a>
+                </div>
+                <div>
+                    <img class="icon" src="./assets/location.png" alt="">
+                    Gurugram, Haryana
+                </div>
+            </div>
         </div>
-        <div>
-            <h3 class="heading">Profile Summary</h3>
-            <p>Backend-focused Software Engineer with 4+ years of experience designing scalable APIs, building
-microservices, and optimizing backend systems. Experienced in payment integrations, distributed
-systems, and production deployments.</p>
+        <div class="pt-3">
+            <h5 class="heading">Profile Summary</h5>
+            <p>Experienced Software Development Engineer with a demonstrated history of working in the information technology and
+                services industry. Skilled in Java, Spring Boot and Microservices. Strong engineering professional
+                with a Bachelor's degree focused on Computer Science from RGPV University.</p>
         </div>
 
         <div>
-            <h3 class="heading">Work Experience</h3>
+            <h5 class="heading">Work Experience</h5>
 
 
             <div class="org-view">
@@ -87,7 +145,7 @@ systems, and production deployments.</p>
                 </div>
                 <div>
                     <img class="icon" src="./assets/person.png" alt="">
-                    Software Engineer
+                    Software Engineer (SDE-1)
                 </div>
                 <div>
                     <img class="icon" src="./assets/calender.png" alt="">
@@ -96,11 +154,13 @@ systems, and production deployments.</p>
             </div>
             <div>
                 <ul>
-                    <li>Owned and developed end-to-end Concern Raising System (ticketing platform)</li>
+                    <li>Implemented REST APIs for various microservices</li>
+                    <li>Owned and developed end-to-end Concern Raising System (ticketing system) in existing
+                        microservices architecture</li>
                     <li>Built Spring Boot APIs for incentive and holdback calculations</li>
                     <li>Implemented Feign-based microservice communication</li>
                     <li>Applied caching, pagination, and async processing</li>
-                    <li>Migrated user system across 5+ services</li>
+                    <li>Migrated user management system (Centralized Authentication System) across 10+ services</li>
                     <li>Reduced system complexity by merging 3 services</li>
                     <li>Handled production bugs and backend optimizations</li>
                 </ul>
@@ -113,11 +173,11 @@ systems, and production deployments.</p>
                 </div>
                 <div>
                     <img class="icon" src="./assets/person.png" alt="">
-                    Software Engineer
+                    Software Engineer (SDET-1)
                 </div>
                 <div>
                     <img class="icon" src="./assets/calender.png" alt="">
-                    March 2025 - Present
+                    Jan 2021 - Feb 2025
                 </div>
             </div>
             <div>
@@ -152,29 +212,43 @@ systems, and production deployments.</p>
                         transaction flows.</li>
                     <li>Verified database integrity and consistency through rigorous testing, ensuring accurate data
                         storage and retrieval.</li> -->
+                    <li>Built a Java tool (JDBC) for data processing</li>
+
+
+                    <li>Implemented REST APIs based simulator to simulate real-world scenarios of transactions</li>
+                    <li>Developed Python automation utilities</li>
                     <li>Built automation frameworks using Selenium WebDriver (Java, TestNG)</li>
                     <li>Executed cross-browser regression testing (Chrome, Edge, Firefox)</li>
                     <li>Created and validated test cases from requirements</li>
-                    <li>Tracked execution status and defects in JIRA</li>
-                    <li>Ensured software quality and performance</li>
-                    <li>Managed 4 projects simultaneously</li>
+                    <li>Ensured software quality and performance while working on 4 projects simultaneously</li>
                     <li>Provided post-production support and issue resolution</li>
                     <li>Performed REST & SOAP API testing (REST-Assured, Postman, Swagger)</li>
-                    <li>Analyzed regression logs and documented defects</li>
-                    <li>Developed Python automation utilities</li>
-                    <li>Built a Java tool (JDBC) for data processing</li>
-                    <li>Monitored web servers using IIS</li>
-                    <li>Tested secure payment transactions (Visa, MasterCard, AmEx)</li>
-                    <li>Used simulators for real-world scenario testing</li>
+                    <li>Tested secure payment transactions (Visa, MasterCard, AmEx) using simulators</li>
                     <li>Verified database integrity and consistency</li>
                 </ul>
             </div>
 
         </div>
-
         <div>
-            <h3 class="heading">Project Experience</h3>
-            <h5>Lunar Incentive Platform</h5>
+            <h5 class="heading">Technical Skills</h5>
+            <p>Technologies : Java, Spring Boot, Microservices, PostgreSQL, MongoDB, Git, JIRA
+                <br>
+                Databases : PostgreSQL, MongoDB, MySQL, MS SQL Server
+                <br>
+                Tools : JIRA, Postman, GitHub Actions, Swagger, Selenium WebDriver, REST-Assured
+            </p>
+
+        </div>
+        <div>
+            <h5 class="heading">Project Experience</h5>
+            <h6 class="text-start">Lunar Incentive Platform</h6>
+            <ul>
+                <li>Implemented multiple features using Spring Boot & PostgreSQL+Mongo</li>
+                <li>Developed REST APIs to perform critical calculations for incentive distribution</li>
+                <li>Handled user authentication and authorization</li>
+                <li>Fixed bugs and improved application performance</li>
+            </ul>
+            <h6 class="text-start">NCERT Coaching Platform</h6>
             <ul>
                 <li>Built production backend using Spring Boot & PostgreSQL</li>
                 <li>Integrated Razorpay payments with webhook automation</li>
@@ -182,32 +256,66 @@ systems, and production deployments.</p>
                 <li>Developed admin panel with role-based access</li>
                 <li>Deployed on VPS with GitHub Actions CI/CD</li>
             </ul>
-            <h5>NCERT Coaching Platform</h5>
+        </div>
+        <div>
+            <h5 class="heading">Education Details</h5>
             <ul>
-                <li>Built production backend using Spring Boot & PostgreSQL</li>
-                <li>Integrated Razorpay payments with webhook automation</li>
-                <li>Implemented secure PDF delivery using Cloudflare</li>
-                <li>Developed admin panel with role-based access</li>
-                <li>Deployed on VPS with GitHub Actions CI/CD</li>
+                <div><strong>Degree:</strong> Bachelor of Technology in Computer Science</div>
+                <div><strong>University:</strong> RGPV University</div>
+                <div><strong>Year of Completion:</strong> 2021</div>
             </ul>
         </div>
-
-        </div>
-
-        <div>
-            <h3 class="heading">Technical Skills</h3>
-            <p>Experienced Software Engineer with a demonstrated history of working in the information technology and
-                services industry. Skilled in Java, Spring Boot, Microservices, and Cloud Computing. Strong engineering
-                professional with a Bachelor's degree focused on Computer Science from XYZ University.</p>
-        </div>
-
-
-
-
-
-
 
     </div>
+
+    <!-- Print button (works on desktop and mobile) -->
+    <button id="printBtn" class="print-button" aria-label="Print resume">Print / Save PDF</button>
+
+    <script>
+        /* script to trigger printing of the container */
+        function printContainer() {
+            const container = document.querySelector('.container');
+            const btn = document.getElementById('printBtn');
+
+            // scroll container into view first (helps mobile and ensures correct layout)
+            if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // blur the button so it doesn't show as focused in the PDF
+            if (btn) btn.blur();
+
+            // give the browser a short moment to finish scrolling/rendering, then open print dialog
+            setTimeout(() => {
+                window.print();
+            }, 250);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('printBtn');
+            if (btn) btn.addEventListener('click', printContainer);
+
+            // Ensure container is in view when user presses Ctrl/Cmd+P — do not prevent default
+            window.addEventListener('keydown', function (e) {
+                if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+                    const container = document.querySelector('.container');
+                    if (container) container.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    // allow the browser to open the print dialog as usual
+                }
+            });
+
+            // Some browsers (mobile/embedded) respond to beforeprint/afterprint events.
+            window.addEventListener('beforeprint', function () {
+                const container = document.querySelector('.container');
+                if (container) {
+                    // ensure layout is at top for printing
+                    container.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            });
+
+            window.addEventListener('afterprint', function () {
+                // no-op, placeholder if you want to restore any temporary changes
+            });
+        });
+    </script>
 
 </body>
 
