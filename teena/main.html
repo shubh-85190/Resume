@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        .heading {
+            border-bottom: 2px solid rgb(0, 127, 195);
+            text-align: center;
+            padding-bottom: 2px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: -2px;
+        }
+
+        .org-view {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 5px;
+            padding-inline: 4px;
+            text-align: justify;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        td {
+            width: 33%;
+            font-weight: 600;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0px;
+            margin-inline: auto;
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Print button styling (visible on screen, hidden when printing) */
+        .print-button {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 9999;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        /* Print rules: hide everything except the container when printing */
+        @media print {
+            .print-button {
+                display: none !important;
+            }
+
+            body * {
+                visibility: hidden !important;
+            }
+
+            .container,
+            .container * {
+                visibility: visible !important;
+            }
+
+            .container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .border-line{
+            /* border-bottom: 1px dashed rgb(0, 127, 195); */
+            /* font-size: 14px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h2>TEENA MEWADA</h2>
+            <h6 class="fst-italic">Trainee Software Engineer</h6>
+            <div class="org-view">
+                <div>
+                    <img class="icon" src="../assets/phone.png" alt="">
+                    <a href="tel:+918450067085">+918450067085</a>
+                </div>
+                <div>
+                    <img class="icon" src="../assets/mail.png" alt="">
+                    <a href="mailto:teenamewada2003@gmail.com">teenamewada2003@gmail.com</a>
+                </div>
+                <div>
+                    <img class="icon" src="../assets/location.png" alt="">
+                    Indore, M.P.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h5 class="heading">Profile Summary</h5>
+            <p>Detail-oriented engineering graduate with knowledge of QA Manual Testing and API Testing using Postman. Skilled in creating and executing test cases, identifying defects, and ensuring software quality. Proficient in test planning, defect tracking, and collaborating with development teams to enhance application performance. Seeking to apply strong analytical and problem-solving skills in a dynamic QA role.</p>
+        </div>
+
+        <div>
+            <h5 class="heading">Internship/Work Experience</h5>
+
+
+            <div class="org-view">
+                <div>
+                    <img class="icon" src="../assets/org.png" alt="">
+                    REDVision Technologies Pvt. Ltd. &nbsp;&nbsp;&nbsp;
+                </div>
+                <div>
+                    <img class="icon" src="../assets/person.png" alt="">
+                    QA Tester
+                </div>
+                <div>
+                    <img class="icon" src="../assets/calender.png" alt="">
+                    June 2025 - Present
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>Performed end-to-end testing of trading platforms integrated with NSE and BSE, ensuring accurate order placement, execution, and trade lifecycle validation.</li>
+                    <li>Collaborated with developers, business analysts, and support teams to reproduce and resolve production issues.</li>
+                    <li>Logged, tracked, and managed defects using Jira, ensuring proper prioritization and timely resolution.</li>
+                    <li>Handled client queries and provided timely resolutions.</li>
+                </ul>
+            </div>
+
+            <div class="org-view">
+                <div>
+                    <img class="icon" src="../assets/org.png" alt="">
+                    Alphawizz Technologies Pvt. Ltd.
+                </div>
+                <div>
+                    <img class="icon" src="../assets/person.png" alt="">
+                    Manual Tester: Intern
+                </div>
+                <div>
+                    <img class="icon" src="../assets/calender.png" alt="">
+                    2 Months
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>Assisted in manual testing of multiple web applications and mobile apps to identify and report defects effectively.</li>
+                    <li>Conducted functional testing for e-commerce websites and mobile applications, verifying critical user workflows such as login, product search, checkout, and payment processes.</li>
+                    <li>Performed front-end testing to validate UI/UX elements, layout responsiveness, and compatibility across different devices and browsers.</li>
+                    <li>Created and maintained detailed bug sheets to document identified defects, including severity, steps to reproduce, and screenshots for reference.</li>
+                    <li>Collaborated with senior QA team members and developers to ensure timely resolution of reported issues.</li>
+                </ul>
+            </div>
+
+        </div>
+                <div>
+            <h5 class="heading">Technical Skills</h5>
+              <ul>
+                <div><strong>Skills :</strong>STLC, Manual Testing, API Testing, Bug tracking, C Programming</div>
+                <div><strong>Databases :</strong> MongoDB, MySQL</div>
+                <div><strong>Tools :</strong> JIRA, Postman</div>
+            </ul>
+
+        </div>
+         <div>
+            <h5 class="heading">Education Details</h5>
+            <ul class="border-line">
+                <div><strong>Degree:</strong> Bachelor of Technology in Computer Science (2021-25)</div>
+                <div><strong>University:</strong> RGPV University <i>(Patel College of Science and Technology, Bhopal)</i></div>
+                <div><strong>CGPA:</strong> 7.63</div>
+            </ul>
+            <ul class="border-line">
+                <div><strong>Class:</strong> 12<sup>th</sup> (2021)</div>
+                <div><strong>Board/School:</strong> MPBSE <i>(Govt. Excellence H S School, Ashta)</i></div>
+                <div><strong>Percentage:</strong> 85%</div>
+            </ul>
+                  <ul>
+                <div><strong>Class:</strong> 10<sup>th</sup> (2019)</div>
+                <div><strong>Board/School:</strong> MPBSE <i>(Govt. H S School, Khadi)</i></div>
+                <div><strong>Percentage:</strong> 87.2%</div>
+            </ul>
+        </div>
+         <div>
+            <h5 class="heading">Hobbies</h5>
+              <ul>
+               <li>Listening to music</li>
+               <li>Watching Movies</li>
+               <li>Travelling</li>
+            </ul>
+        </div>
+
+
+        <!-- <div>
+            <h5 class="heading">Project Experience</h5>
+                        <h6 class="text-start">Cars24 - UAE</h6>
+            <ul>
+                <li>Developed multiple features for the Cars24 platform</li>
+                <li>Integrated file upload functionality to aws-bucket and reduced application memory usage</li>
+                <li>Developed cross-service communication mechanisms in multiple microservices</li>
+                <li>Fixed production issues and bugs</li>
+            </ul>
+            <h6 class="text-start">Lunar Incentive Platform</h6>
+            <ul>
+                <li>Implemented multiple features using Spring Boot & PostgreSQL+Mongo</li>
+                <li>Developed REST APIs to perform critical calculations for incentive distribution</li>
+                <li>Handled user authentication and authorization</li>
+                <li>Fixed bugs and improved application performance</li>
+            </ul>
+            <h6 class="text-start">NCERT Coaching Platform</h6>
+            <ul>
+                <li>Built production backend using Spring Boot & PostgreSQL</li>
+                <li>Integrated Razorpay payments with webhook automation</li>
+                <li>Implemented secure PDF delivery using Cloudflare</li>
+                <li>Developed admin panel with role-based access</li>
+            </ul>
+        </div> -->
+
+
+    </div>
+
+    <!-- Print button (works on desktop and mobile) -->
+    <button id="printBtn" class="print-button" aria-label="Print resume">Print / Save PDF</button>
+
+    <script>
+        /* script to trigger printing of the container */
+        function printContainer() {
+            const container = document.querySelector('.container');
+            const btn = document.getElementById('printBtn');
+
+            // scroll container into view first (helps mobile and ensures correct layout)
+            if (container) container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // blur the button so it doesn't show as focused in the PDF
+            if (btn) btn.blur();
+
+            // give the browser a short moment to finish scrolling/rendering, then open print dialog
+            setTimeout(() => {
+                window.print();
+            }, 250);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('printBtn');
+            if (btn) btn.addEventListener('click', printContainer);
+
+            // Ensure container is in view when user presses Ctrl/Cmd+P — do not prevent default
+            window.addEventListener('keydown', function (e) {
+                if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+                    const container = document.querySelector('.container');
+                    if (container) container.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    // allow the browser to open the print dialog as usual
+                }
+            });
+
+            // Some browsers (mobile/embedded) respond to beforeprint/afterprint events.
+            window.addEventListener('beforeprint', function () {
+                const container = document.querySelector('.container');
+                if (container) {
+                    // ensure layout is at top for printing
+                    container.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            });
+
+            window.addEventListener('afterprint', function () {
+                // no-op, placeholder if you want to restore any temporary changes
+            });
+        });
+    </script>
+
+</body>
+
+</html>
